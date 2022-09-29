@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>CTD Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    	<div class="container">
+
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				$('#tabs').tab();
+			});
+		</script> 
+
+      	<!-- Main jumbotron for a primary marketing message or call to action -->
+      	<div class="jumbotron">
+        	<h1>CTD Project</h1>
+        	<p>This is a CTD project that uses nusoap, bootstrap javascript and apache to provide a light central threat managmenent</p>
+      	</div>
+
+	<div id="content">
+		<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+			<li class="active"><a href="#deployed" data-toggle="tab">DEPLOYED</a></li>
+			<li><a href="#ddi" data-toggle="tab">DDI</a></li>
+			<li><a href="#+" data-toggle="tab">+</a></li>
+		</ul>
+
+		<div id="mp-tab-content" class="tab-content">
+
+      			<div class="tab-pane active" id="deployed">
+			        <p>SOAP WSDL on-line available and PUSHED to Compatible components</p>
+				<div class="row">
+					<div>
+						<table class="table">
+			            		<thead>
+				              	<tr>
+				                <th>#</th>
+				                <th>Types</th>
+				                <th>Values</th>
+				                <th>Sources</th>
+				                <th>Status Source</th>
+				                <th>Source Types</th>
+				                <th>Comments</th>
+				        	<th>Actions</th>
+					        <th>SOAP</th>
+					        <th>PUSH</th>
+					        <th>DISABLE</th>
+					        <th>EXPIRES</th>
+				              </tr>
+				            </thead>
+				            <tbody>
+				              <tr>
+				                <td>1</td>
+				                <td>IP Address</td>
+				                <td>123.123.123.123</td>
+				                <td>ddi.epaquet.net</td>
+				                <td>Enable</td>
+				                <td>User-Defined</td>
+				                <td>#ticket-001</td>
+						<td>
+						<div class="dropdown">
+							<button class="btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">Monitor</a></li>
+								<li><a href="#">Redirect</a></li>
+								<li><a href="#">Block</a></li>
+								<li><a href="#">Quarantine</a></li>
+							</ul>
+						</div>
+						</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">no
+								</label>
+							</div>
+						</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">no
+								</label>
+							</div>
+						</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">no
+								</label>
+							</div>
+						</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">no
+								</label>
+							</div>
+						</td>
+				              </tr>
+				              <tr>
+				                <td>2</td>
+				                <td>Url</td>
+				                <td>http://ss.epaquet.net</td>
+				                <td>ddi.epaquet.net</td>
+				                <td>Enable</td>
+				                <td>Virtual Analyzer</td>
+				                <td>#ticket-002</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">Deploy</button></td>
+					        <th><button type="button" class="btn btn-xs btn-default">Push</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Disable</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Delete</button></th>
+				              </tr>
+				              <tr>
+				                <td>3</td>
+				                <td>Url</td>
+				                <td>http://ss.epaquet.net/demos/basic.html</td>
+				                <td>ddi.epaquet.net</td>
+				                <td>Enable</td>
+				                <td>C&C Callback</td>
+				                <td>#ticket-003</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">Deploy</button></td>
+					        <th><button type="button" class="btn btn-xs btn-default">Push</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Disable</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Delete</button></th>
+				              </tr>
+				              <tr>
+				                <td>4</td>
+				                <td>File</td>
+				                <td>6bed4a9e84af528929596cb8a953536262c059f6</td>
+				                <td>ddi.epaquet.net</td>
+				                <td>Enable</td>
+				                <td>Virtual Analyzer</td>
+				                <td>#ticket-004</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">Deploy</button></td>
+					        <th><button type="button" class="btn btn-xs btn-default">Push</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Disable</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Delete</button></th>
+				              </tr>
+				              <tr>
+				                <td>5</td>
+				                <td>Domain</td>
+				                <td>epaquet.net</td>
+				                <td>ddi.epaquet.net</td>
+				                <td>Enable</td>
+				                <td>User-Defined</td>
+				                <td>#ticket-005</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">Deploy</button></td>
+					        <th><button type="button" class="btn btn-xs btn-default">Push</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Disable</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Delete</button></th>
+				              </tr>
+				            </tbody>
+				          </table>
+				</div>
+				</div>
+			</div>
+      			<div class="tab-pane" id="+">
+			        <h1>+</h1>
+			</div>
+      			<div class="tab-pane" id="ddi">
+			        <h1>DDI</h1>
+
+			        <h2>V.A. S.O. Deny</h2>
+			        <button type="button" class="btn btn-xs btn-default" name="button_refresh_va">Refresh</button>
+
+				<div class="row">
+					<div class="col-md-6">
+						<table class="table">
+			            		<thead>
+				              	<tr>
+				                <th>#</th>
+				                <th>First Name</th>
+				                <th>Last Name</th>
+				                <th>Username</th>
+				        	<th>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</th>
+					        <th><button type="button" class="btn btn-xs btn-default">To Deploy</button></th>
+					        <th><button type="button" class="btn btn-xs btn-default">Reset</button></th>
+				              </tr>
+				            </thead>
+				            <tbody>
+				              <tr>
+				                <td>1</td>
+				                <td>Mark</td>
+				                <td>Otto</td>
+				                <td>@mdo</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">To Deploy</button></td>
+					        <td><button type="button" class="btn btn-xs btn-default">Reset</button></td>
+				              </tr>
+				              <tr>
+				                <td>2</td>
+				                <td>Jacob</td>
+				                <td>Thornton</td>
+				                <td>@fat</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">To Deploy</button></td>
+					        <td><button type="button" class="btn btn-xs btn-default">Reset</button></td>
+				              </tr>
+				              <tr>
+				                <td>3</td>
+				                <td>Larry</td>
+				                <td>the Bird</td>
+				                <td>@twitter</td>
+				        	<td>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off" checked>A1
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A2
+								</label>
+								<label class="btn btn-xs btn-default">
+									<input type="checkbox" autocomplete="off">A3
+								</label>
+							</div>
+						</td>
+					        <td><button type="button" class="btn btn-xs btn-default">To Deploy</button></td>
+					        <td><button type="button" class="btn btn-xs btn-default">Reset</button></td>
+				              </tr>
+				            </tbody>
+				          </table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/docs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+

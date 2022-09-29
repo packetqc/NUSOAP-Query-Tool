@@ -1,0 +1,7 @@
+#|Sources|Status Sources|Source Types|Source Actions|Types|Values|Comments|Actions|Online|Push|Disable|Expires
+1|ddi.epaquet.net|Enable|User-Defined|Monitor and reset1|IP Address|123.123.123.123|#ticket-001|Monitor and reset|yes|yes|no|no
+2|ddi.epaquet.net|Enable|Virtual Analyzer|Monitor only|Url|http://ss.epaquet.net|#ticket-002|Monitor only|yes|yes|no|no
+3|ddi.epaquet.net|Enable|C&C Callback|Monitor and reset1|Url|http://ss.epaquet.net/demos/basic.html|#ticket-003|Monitor and reset|yes|yes|no|no
+4|ddi.epaquet.net|Enable|Virtual Analyzer|Monitor and reset1|File|6bed4a9e84af528929596cb8a953536262c059f6|#ticket-004|Monitor and reset|yes|yes|no|no
+5|ddi.epaquet.net|Enable|User-Defined|Monitor only|Domain|epaquet.net|#ticket-005|Monitor only|yes|yes|no|no
+6|ddan.epaquet.net|Enable|C&C Callback|Monitor and reset|Url|http://ss.epaquet.net/demos/basic.html|#ticket-100|Monitor and reset|yes|yes|no|no

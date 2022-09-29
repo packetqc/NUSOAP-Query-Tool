@@ -1,0 +1,3 @@
+Assets|Asset Types|Registrations|Interoperabilities
+ddi.epaquet.net|Deep Discovery Inspector|url=https://ddi.epaquet.net/api?WSDL|get_sandbox_feedback_blacklists=Read;set_denylists=Write
+iptables.epaquet.net|IP Tables|ssh=127.0.0.1|DROP=Write;REJECT=Write;LOG=Write;LIMIT=Write

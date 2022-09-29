@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+    
+th, td {
+    padding: 10px;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+}
+

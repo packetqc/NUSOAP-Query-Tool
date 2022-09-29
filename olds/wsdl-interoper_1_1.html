@@ -1,0 +1,207 @@
+<div id="accordion" class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseConnection">Connection with the asset for certification or for integration</a>
+                </h4>
+            </div>
+            <div id="collapseConnection" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <form name="connectionForm" action="ui/wsdl-interoper.php" method="POST">
+                        <table id="connectionTable" class="display dataTable table table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Asset</th>
+                                    <th>Connection string</th>
+                                    <th>Authentication (optional)</th>
+                                    <th>Connect</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="connectionAsset" value="ddi.epaquet.net" /></td>
+                                    <td><input type="text" name="connectionString" value="http://ddi.epaquet.net/api?WSDL" /></td>
+                                    <td><input type="text" name="connectionAuth" value="" /></td>
+                                    <td><input type="submit" value="connectButton" name="connectButton" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSamples">Configuration of the tests samples for validations</a>
+                </h4>
+            </div>
+            <div id="collapseSamples" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <table id="samples-types" class="display dataTable table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Types</th>
+                                <th>Values</th>
+                                <th>Actions</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>IP Address</td>
+                                <td title="Click to edit...">123.123.123.123</td>
+                                <td></td>
+                                <td>Certification test</td>
+                            </tr>
+                            <tr>
+                                <td>Url</td>
+                                <td title="Click to edit...">http://ss.epaquet.net/demos/basic.html</td>
+                                <td></td>
+                                <td>Certification test</td>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td title="Click to edit...">cf8bd9dfddff007f75adf4c2be48005cea317c62</td>
+                                <td></td>
+                                <td>Certification test</td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td title="Click to edit...">epaquet.net</td>
+                                <td></td>
+                                <td>Certification test</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseMethods">Interoperability available</a>
+                </h4>
+            </div>
+            <div id="collapseMethods" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <table id="interoperateTable" class="display dataTable table table-striped table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Methods available</th>
+                                <th>Interoperate mode</th>
+                                <th>Interoperate type</th>
+                                <th>Add to configurations</th>
+                            </tr>
+                        </thead>
+
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th>Methods</th>
+                                <th>Interoperate mode</th>
+                                <th>Interoperate type</th>
+                                <th>Add to configurations</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseIntegration">Configuration of the certification or the integration</a>
+                </h4>
+            </div>
+            <div id="collapseIntegration" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div>
+                        <table id="configurationTable" class="display dataTable table table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Configured methods</th>
+                                    <th>Configured modes</th>
+                                    <th>Configured types</th>
+                                    <th>Test configuration</th>
+                                </tr>
+                            </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <th></th>
+                                    <th>Configured methods</th>
+                                    <th>Configured modes</th>
+                                    <th>Configured types</th>
+                                    <th>Test configuration</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseCertif">Certification or testing console for validations and for troubleshooting</a>
+                </h4>
+            </div>
+            <div id="collapseCertif" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <table id="console" class="display dataTable table table-striped table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>TEXT (view)</th>
+                                <th>WEB (view)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <textarea name="Intelligence" rows="10" cols="40">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    <textarea name="Console" rows="10" cols="40" readonly="readonly">
+                                    </textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsePersist">Additional certification and integration options</a>
+                </h4>
+            </div>
+            <div id="collapsePersist" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><p>Persist as certified asset, as preset configuration and integrate to the connected environment to manage threats.</p></div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+    </div>        
